@@ -1,0 +1,246 @@
+:root{
+    --cor-primaria:#000000;
+    --cor-secundaria: #C0C0C0;
+    --cor-terciaria: #167BF7; 
+    --cor-quartenaria:#f0f0f0;
+
+    --fonte-primaria-titulo: '';
+    --fonte-secundaria-texto: 'Inter';
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-quartenaria);
+    font-family: var(--fonte-secundaria-texto);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.part1 {
+    background-image: url("assent/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container_titulo{
+    font-size: 28px;
+    font-weight: 700;
+    text-align:center;
+
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao{
+    background-color: var(--cor-terciaria);
+    border-radius: 5px;
+    padding: 1em;
+    color:var(--cor-quartenaria);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+.container__botao:hover{/*colorir botão ao passar por cima*/
+    background-color: #272727;
+    cursor: -webkit-grabbing;/*muda o cursor no botão*/
+}
+
+.container__botao2{
+    color: var(--cor-secundaria);
+    background-color: transparent;
+    border: 2px solid var(--cor-quartenaria);
+    border-radius: 5px;
+    padding: 1em;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1rem;/*margem ao redor cabe ate 4 valores(exp relogio)*/
+}
+.container__botao2:hover{/*colorir botão ao passar por cima*/
+    background-color: #272727;
+    cursor: -webkit-grabbing;/*muda o cursor no botão*/
+}
+
+.container_aviso{
+    color: var(--cor-secundaria);
+    font-size: 12px;
+    
+}
+
+.container__imagem{
+ margin: 4rem 0 4rem 0;
+
+}
+
+.container__caixa{
+
+    margin: 0 6rem;
+}
+
+/*part2*/
+.part2{
+
+    align-items: center;
+    margin: 0 10rem;
+}
+
+.container__imagem2{
+    width: auto;
+}
+
+.container_subtitulo{
+    font-weight: 700;
+    font-size: 48px;
+    color:var(--cor-quartenaria);
+    margin-bottom: 0.5rem;
+}
+
+.container_descricao{
+    color: var(--cor-secundaria);
+}
+/*parte 3*/
+.part3{
+    align-items: center;
+
+}
+
+.container__imagem3{
+    width: auto;
+    padding: 4rem;
+    
+
+}
+
+.container_descricao2{
+    align-items: center;
+    padding: 5rem;
+    font-weight: 300;
+    font-size: 18px;
+    color:var(--cor-quartenaria);
+}
+
+.container__botao3{/*utilzado o botao anterior com mudança no layout*/
+    background-color: var(--cor-terciaria);
+    border-radius: 5px;
+    color:var(--cor-quartenaria);
+    display: block;
+    text-decoration: none;
+    display: inline-block; /*ocupa apenas a parte dele e faz quebra de linha*/
+    align-items: center;
+    margin: 0rem 0 3rem 17rem;
+    padding: 1rem;
+   
+}
+.container__caixa3{
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    color:var(--cor-quartenaria);
+}
+/*part4*/
+.container__imagem4{
+    width: auto;
+    padding: 3rem;
+}
+
+.part4{
+    align-items: center;
+    margin: 0 5rem  5rem 0;
+}
+.container_caixa4{
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+.container_subtitulo2{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--cor-quartenaria);
+    margin-bottom: 1rem;
+    text-align: justify;
+    
+}
+
+.container_descricao3{
+    text-align: justify;
+    color: var(--cor-secundaria);
+   
+}
+/*part5*/
+.dispositivos_lista{
+    display: flex;
+    justify-content: center;
+    list-style-type:none;/*serve para tirar as marcaçoes da ul e li */
+    font-size: 20px;
+    margin: 5rem 0 0 5rem;
+    gap: 10rem;
+}
+
+.dispositivos{
+    text-align: center;
+
+}
+
+.titulo_d{
+    width: 700;
+    font-size: 3rem;
+    color: var(--cor-quartenaria);
+}
+/*part5*/
+.rodape{
+    width: 90rem;
+    height: 214rem;
+}
+
+.imagem__rodape{
+    align-items: center;
+    width: 6.5 rem;
+    height: 2.1rem;
+    flex-shrink: 0;
+    margin: 10rem 0 0rem 45rem;
+}
+
+.rodape_link{
+    display: inline-flex;
+    list-style-type: none;
+    text-align: center;
+    margin: 3rem 5rem 2rem 7rem;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.lista_link{
+  
+    text-align: center;
+    color: var(--cor-quartenaria);
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
+.rodape_texto{
+    color: var(--cor-secundaria);
+    font-size: 10px;
+    text-align: center;
+    align-items: center;
+    line-height: 1.5rem; /*espacamento entre as linhas*/
+}
+
+.lista_link a:hover{
+    color: var(--cor-terciaria); /*ao passar por cima do bota a escrita muda de cor*/
+}
+
+.lista_link a:active {
+    color: darkblue; /*ao apertar o botao ou segurar ele muda de cor*/
+}
